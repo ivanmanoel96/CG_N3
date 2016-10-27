@@ -53,7 +53,7 @@ public final class Transformacao4D {
 	/// Se manter os valores iguais de Ex,Ey e Ez o objeto vai ser reduzido ou ampliado proporcionalmente.
 	public void atribuirEscala(double sX, double sY, double sZ)
 	{
-	    atribuirIdentidade();
+	    this.atribuirIdentidade();
 	    matriz[0] =  sX;
 	    matriz[5] =  sY;
 	    matriz[10] = sZ;
@@ -134,10 +134,10 @@ public final class Transformacao4D {
 
 	public void exibeMatriz() {
 		System.out.println("______________________");
-		System.out.println("|" + GetElement( 0) + " | "+ GetElement( 4) + " | " + GetElement( 8) + " | "+ GetElement(12));
-		System.out.println("|" + GetElement( 1) + " | "+ GetElement( 5) + " | " + GetElement( 9) + " | "+ GetElement(13));
-		System.out.println("|" + GetElement( 2) + " | "+ GetElement( 6) + " | " + GetElement(10) + " | "+ GetElement(14));
-		System.out.println("|" + GetElement( 3) + " | "+ GetElement( 7) + " | " + GetElement(11) + " | "+ GetElement(15));
+		System.out.println("| " + GetElement(0) + " | " + GetElement(4) + " | " + GetElement(8)  + " | " + GetElement(12));
+		System.out.println("| " + GetElement(1) + " | " + GetElement(5) + " | " + GetElement(9)  + " | " + GetElement(13));
+		System.out.println("| " + GetElement(2) + " | " + GetElement(6) + " | " + GetElement(10) + " | " + GetElement(14));
+		System.out.println("| " + GetElement(3) + " | " + GetElement(7) + " | " + GetElement(11) + " | " + GetElement(15));
 	}
 
 	
